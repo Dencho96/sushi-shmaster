@@ -1,0 +1,56 @@
+.hero {
+    padding: 49px 0 45px;
+
+    &__title, &__text{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title{
+        max-width: 960px;
+        margin-bottom: 30px;
+        font-size: 24px;
+
+        @include minw576 {
+            margin-bottom: 35px;
+            font-size: 28px;
+        }
+
+        @include minw768 {
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        @include minw992 {
+            margin-bottom: 45px;
+            font-size: 36px;
+        }
+
+        @include minw1200 {
+            margin-bottom: 50px;
+            font-size: 38px;
+        }
+    }
+
+    &__text{
+        max-width: 750px;
+        font-weight: 400;
+        font-size: 18px;
+
+        @include minw576 {
+            font-size: 20px;
+        }
+
+        @include minw768 {
+            font-size: 22px;
+        }
+
+        @include minw992 {
+            font-size: 26px;
+        }
+
+        @include minw1200 {
+            font-size: 30px;            
+        }
+    }
+}
