@@ -1,0 +1,23 @@
+@mixin minw576 {
+    @media (min-width: 576px){
+        @content;
+    }
+}
+
+@mixin minw768 {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin minw992 {
+    @media (min-width: 992px){
+        @content;
+    }
+}
+
+@mixin minw1200 {
+    @media (min-width: 1200px){
+        @content;
+    }
+}

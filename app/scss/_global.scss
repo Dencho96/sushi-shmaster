@@ -27,6 +27,40 @@ p {
 }
 
 body {
+    min-width: 320px;
     overflow-x: hidden;
     background-color: white;
+    font-family: "PTSans", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.logo__img {
+    height: 50px;
+
+    @include minw576 {
+        height: 60px;
+    }
+
+    @include minw768 {
+        height: 65px;
+    }
+
+    @include minw992 {
+        height: 70px;
+    }
+
+    @include minw1200 {
+        height: 98px;
+    }
 }
