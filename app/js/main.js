@@ -10,3 +10,5 @@ const offerSlider = new Swiper('.offer__slider', {
         prevEl: '.offer__btn--prev',
     },
 });
+
+document.querySelector(".current-year").innerHTML = new Date().getFullYear()

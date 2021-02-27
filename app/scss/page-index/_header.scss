@@ -1,24 +1,27 @@
-.header{
+.header {
     padding: 9px 0 10px;
     background-color: #0072bc;
 
     @include minw1200 {
-        height: 125px;
+        height: 117px;
     }
 
-    &__inner{
+    &__inner {
         justify-content: space-between;
         align-items: center;
+        @include minw1200{
+            padding: 0 15px;
+        }
     }
 
-    &__order{
+    &__order {
         padding: 10px 30px 10px 15px;
         font-size: 16px;
         color: #fdfafa;
         background-color: #f26522;
         transition: opacity 0.2s;
 
-        &:hover{
+        &:hover {
             opacity: 0.8;
         }
 
@@ -27,14 +30,15 @@
         }
 
         @include minw992 {
-            padding: 15px 50px 18px 30px;
+            padding: 15px 30px 18px 30px;
             font-size: 20px;
         }
 
         @include minw1200 {
+            margin: -4px 38px 0 0;
             min-width: 250px;
-            padding: 17px 60px 19px 34px;
-            font-size: 22px;
+            padding: 15px 30px 15px 34px;
+            font-size: 26px;
         }
     }
 }

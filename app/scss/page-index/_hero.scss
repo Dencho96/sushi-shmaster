@@ -1,5 +1,5 @@
 .hero {
-    padding: 49px 0 45px;
+    padding: 40px 0 33px;
     color: #080808;
 
     &__title, &__text{
@@ -24,12 +24,13 @@
 
         @include minw992 {
             margin-bottom: 45px;
-            font-size: 36px;
+            font-size: 38px;
         }
 
         @include minw1200 {
-            margin-bottom: 50px;
-            font-size: 38px;
+            margin-bottom: 44px;
+            font-size: 44px;
+            line-height: 56px;
         }
     }
 
