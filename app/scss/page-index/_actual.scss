@@ -104,6 +104,11 @@
 
     &__order {
         color: #06811a;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     &__status {
