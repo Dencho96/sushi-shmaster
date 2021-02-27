@@ -1,0 +1,89 @@
+.offer {
+    padding: 40px 0 60px;
+    background-color: #6dcff6;
+
+    @include minw576 {
+        padding: 50px 0 70px;
+    }
+
+    @include minw768 {
+        padding: 60px 0 95px;
+    }
+
+    @include minw1200 {
+        padding: 75px 0 130px;
+    }
+
+    &__inner {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+
+        @include minw576 {
+            font-size: 24px;
+        }
+
+        @include minw768 {
+            font-size: 28px;
+        }
+
+        @include minw992 {
+            font-size: 36px;
+        }
+
+        @include minw1200 {
+            margin-bottom: 59px;
+            font-size: 42px;
+        }
+    }
+
+    &__slider {
+        margin-bottom: 55px;
+    }
+
+    &__menu{
+        justify-content: space-between;
+        align-items: center;
+        max-width: 390px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__btn {
+        width: 30px;
+        height: 46px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        outline: transparent;
+        transition: opacity 0.2s;
+
+        &:hover{
+            opacity: 0.7;
+        }
+
+        &--prev{
+            background-image: url("../images/arrow-left.webp");
+        }
+
+        &--next{
+            background-image: url("../images/arrow-right.webp");
+        }
+    }
+
+    &__pagination {
+        position: relative;
+    }
+}

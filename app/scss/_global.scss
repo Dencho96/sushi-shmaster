@@ -64,3 +64,24 @@ body {
         height: 98px;
     }
 }
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+
+    background-color: white;
+
+    &+& {
+        margin-left: 38px;
+    }
+
+    @include minw768 {
+        width: 30px;
+        height: 30px;
+    }
+
+    @include minw992 {
+        width: 46px;
+        height: 46px;
+    }
+}
